@@ -1,0 +1,429 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    background-repeat: no-repeat;
+    background-image: url(Images/background-image-cropped.svg);
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #f8f8ff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 15%;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    color: #f8fafc;
+    transition: color 0.2s;
+}
+
+h1:hover {
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+    list-style: none;
+}
+
+nav a{
+    display: inline-block;
+    transition: transform 0.2s, color 0.2s; 
+}
+
+nav a:link, nav a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    transform: translateY(-1px);
+    color: #38bdf8;
+}
+
+#name-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh
+}
+
+#name-status h2 {
+    color: #70F7D2;
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-size: 6rem;
+    margin: 0;
+    margin-top: 16rem;
+    padding: 0;
+}
+
+#name-status p {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+#about {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+#about-content {
+    display: 1;
+    max-width: 800px;
+    margin: 0 auto; 
+}
+    
+#about h2{
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    color: lightgray;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    font-weight: 400;
+    padding-right: 3rem;
+    max-width: 800px;
+}
+
+#face {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid #70F7D2;
+    margin-bottom: 6rem;
+}
+
+#skills-experience {
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+}
+
+#picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 300px;
+    flex-shrink: 0;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    padding-left: 10rem;
+}
+
+#buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+#buttons button {
+    background-color:#70F7D2;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#buttons button:hover{
+    background-color: #92ffe6;
+    transform: translateY(-3px);
+}
+
+#buttons .primary-button {
+    background-color: #92ffe6;
+    color: #FFFFFF
+}
+
+#buttons .secondary-button {
+    background-color: #70F7D2; 
+    border: 1px solid #70F7D2;
+}
+
+#skills-content {
+    display: flex;
+    width: 70%;
+    padding-left: 4vw;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+#skills-content h3, #experience-content h3{
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #38bdf8;
+}
+
+#skills-content p, #experience-content p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+}
+
+#first-experience, #second-experience {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+#experience-content {
+    display: none;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+#projects {
+    min-height: 100vh;
+    scroll-margin-top: 50px;
+}
+
+#projects h2 {
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0;
+   
+}
+
+#projects-subtitle {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #d0d0d0;
+    text-align: center;
+    margin-top: -1rem; 
+    margin-bottom: 2rem;
+}
+
+#project-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+    cursor: pointer;
+}
+
+.project-card {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 25%;
+    min-height: 350px;
+    height: auto;
+    box-sizing: border-box;
+
+    border-radius: 15px;
+    transition: transform 0.2s;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card ul li {
+    max-width: 290px;
+}
+
+.project-card:hover{
+    transform: translateY(-15px);
+}
+
+.project-pics {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#weather-pics {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.weather-app {
+    display: 1 1 0;
+    max-width: 49%;
+    height: auto;
+}
+
+#toronto {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#vancouver {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.project-title {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #70F7D2;
+    text-align: center;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+.project-card ul {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #D0D0D0;
+    line-height: 1.7;
+}
+
+.tech-line {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #38bdf8
+}
+
+#contact {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+#contact h2 {
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 3rem;
+}
+
+#contact p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #d0d0d0;
+    text-align: center;
+    margin-top: -1rem;
+    padding-bottom: 2rem; 
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+    cursor: pointer;
+}
+
+.contact-card {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 25%;
+    min-height: 375px;
+    height: auto;
+    box-sizing: border-box;
+
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s;
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.contact-card:hover{
+    transform:translateY(-15px);
+}
+
+.contact-pics {
+    width: 40%;
+    padding: 3rem;
+}
+
+.contact-cards h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin: 0;
+
+}
+
+.contact-cards p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #D0D0D0;
+    padding: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    color:white;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+}
+
+
+
+

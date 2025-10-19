@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <h1>Sarim Khan</h1>
+    <nav>
+        <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section id="name-status">
+            <h2>SARIM KHAN</h2>
+            <p>2nd Year Computer Science Student @ TMU</p>
+        </section>
+        <section id="about"> 
+            <div id="picture">
+                <img id="face" src="Images/closeup-edited.jpg" alt="A closeup of my face">
+                <img id="skills-experience" src="Images/professional-skills-icon.svg" alt="A picture representing skills and experience">
+            </div>
+            <div id="about-content">
+                <h2>About Me</h2>
+                <p>Hey, I’m Sarim Khan, a 2nd year Computer Science student at TMU. Right now, I’m keeping my focus pretty broad and exploring areas like Full Stack development, Machine Learning, and AI. I really enjoy taking complex ideas and turning them into something that actually works. What motivates me most is collaborating with people and building things that can make a real difference. I’m always looking for opportunities to learn more and contribute to projects that push things forward.</p>
+                    <div id="buttons">
+                        <button id="skills" class="primary-button">Skills</button>
+                        <button id="experience">Experience</button>
+                    </div>
+                    <div id="skills-content">
+                        <div id="languages">
+                            <h3>Languages</h3>
+                            <p>Java</p>
+                            <p>Python</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                            <p>C++</p>
+                        </div>
+                        <div id="frameworks">
+                            <h3>Frameworks</h3>
+                            <p>React (Beginner)</p>
+                            <p>Flask</p>
+                        </div>
+                        <div id="tools">
+                            <h3>Tools</h3>
+                            <p>VS Code</p>
+                            <p>Eclipse</p>
+                            <p>Spyder</p>
+                            <p>Git</p>
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+
+                    <div id="experience-content">
+                        <div id="first-experience">
+                            <h3>Newton-Trelawney Property Management Inc.</h3>
+                            <p>April 2024 - Present</p>
+
+                        </div>
+                        <div id="second-experience">
+                            <h3>Seven Oaks Long-Term Care Home</h3>
+                            <p>May 2022 - September 2022</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p id="projects-subtitle">Hover and click on a project to view its GitHub Repository</p>
+
+            <div id="project-cards">
+                <a href="https://github.com/Shayan-2/SafePath" target="_blank" class="project-card">
+                    <img src="Images/SafePath.png" class="project-pics" alt="A picture demonstrating my project SafePath">
+                    <h3 class="project-title">SafePath (Hackathon Project)</h3>
+                    <ul>
+                        <li>A full-stack web app that helps users find the safest routes in Toronto using historical crime data.</li>
+                        <li>Features interactive maps powered by Leaflet.js and a Flask backend that ranks routes by safety.</li>
+                    </ul>
+                    <p class="tech-line">HTML, CSS, JS, Python (Flask)</p>
+
+                </a>
+
+                <a href="https://github.com/Flash-Focus/FlashFocus" target="_blank" class="project-card">
+                    <img src="Images/FlashFocus.jpg" class="project-pics" alt="A picture demonstrating my project FlashFocus">
+                    <h3 class="project-title">FlashFocus</h3>
+                    <ul>
+                        <li>A smart study app that generates flashcards and quizzes from any topic using AI.</li>
+                        <li>Built to make studying faster and more engaging with saved decks and interactive quiz modes.</li>
+                    </ul>
+                    <p class="tech-line">Java Swing, DeepSeek R1T2 Chimera API</p>
+                </a>
+
+                <a href="https://github.com/sarimkhan06/Weather-App" target="_blank" class="project-card" id="weather-card">
+                    <div id="weather-pics">
+                        <img src="Images/Weather App Toronto.png" class="weather-app" id="toronto" alt="A picture demonstrating my Weather App of Toronto">
+                        <img src="Images/Weather App Vancouver.png" class="weather-app" id="vancouver" alt="A picture demonstrating my Weather App of Vancouver">
+                    </div>
+                    <h3 class="project-title">Weather App</h3>
+                    <ul>
+                        <li>A desktop app that shows real-time weather data for any city using live API data.</li>
+                        <li>Includes a clean Swing-based interface for quick city searches and temperature updates.</li>
+                    </ul>
+                    <p class="tech-line">Java Swing, Geocoding API, Forecast API</p>
+                </a>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me. I'm always open to new ideas or collaborations!</p>
+            <div class="contact-cards">
+                <a class="contact-card">
+                    <img src="Images/email.svg" alt="A picture of an email symbol" class="contact-pics">
+                    <h3>Email</h3>
+                    <p>sarim.rkhan786@gmail.com</p>
+                </a>
+
+                <a class="contact-card" href="https://www.linkedin.com/in/sarimkhan06/" target="_blank">
+                    <img src="Images/linkedin.svg" alt="A picture of a linkedin logo" class="contact-pics">
+                    <h3>LinkedIn</h3>
+                    <p>sarimkhan06</p>
+                </a>
+
+                <a class="contact-card" href="https://github.com/sarimkhan06" target="_blank">
+                    <img src="Images/github.svg" alt="A picture of the github logo" class="contact-pics">
+                    <h3>GitHub</h3>
+                    <p>sarimkhan06</p>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+        <p>© 2025 Sarim Khan</p>
+        </footer>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
