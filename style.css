@@ -103,9 +103,10 @@ nav a:hover {
 }
 
 #about-content {
-    display: 1;
     max-width: 800px;
-    margin: 0 auto; 
+    align-self: flex-start;
+    margin: 0 auto;
+    margin-top: 0;
 }
     
 #about h2{
@@ -187,6 +188,7 @@ nav a:hover {
 
 #skills-content {
     display: flex;
+    flex-direction: row;
     width: 70%;
     padding-left: 4vw;
     justify-content: space-around;
@@ -207,17 +209,46 @@ nav a:hover {
     color: white;
 }
 
-#first-experience, #second-experience {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
+#experience-content p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    width: 200px;
     text-align: center;
+    margin-left: 50px;
 }
 
+#first-experience, #second-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    width: 50%;
+    max-width: 500px;
+}
+
+#second-experience h3 {
+    width: 550px;
+}
+
+.role{
+    margin: 0;
+    padding: 0;
+}
+
+
 #experience-content {
-    display: none;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
     gap: 3rem;
+}
+
+.experience-pic {
+    border-radius: 10px;
+    width: 130px;
+    height: auto;
 }
 
 #projects {
